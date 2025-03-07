@@ -1,0 +1,64 @@
+Checks: >
+  -*,
+  readability-identifier-naming,
+  google-readability-braces,
+  google-readability-casting,
+  google-readability-todo,
+  google-default-arguments,
+  google-runtime-int,
+  google-runtime-references
+
+WarningsAsErrors: '*'
+
+CheckOptions:
+  # **类命名规则**
+  - key: readability-identifier-naming.ClassCase
+    value: UpperCamelCase
+  - key: readability-identifier-naming.StructCase
+    value: UpperCamelCase
+  - key: readability-identifier-naming.UnionCase
+    value: UpperCamelCase
+
+  # **函数命名规则**
+  - key: readability-identifier-naming.FunctionCase
+    value: UpperCamelCase
+
+  # **变量命名规则**
+  - key: readability-identifier-naming.VariableCase
+    value: lower_snake_case
+  - key: readability-identifier-naming.GlobalVariableCase
+    value: lower_snake_case
+  - key: readability-identifier-naming.ConstantCase
+    value: UpperCamelCase   # Google 风格常量看起来像函数，例如 kMaxCount
+  - key: readability-identifier-naming.MacroDefinitionCase
+    value: UPPER_CASE
+  - key: readability-identifier-naming.NamespaceCase
+    value: lower_snake_case
+  - key: readability-identifier-naming.EnumCase
+    value: UpperCamelCase
+  - key: readability-identifier-naming.EnumConstantCase
+    value: UpperCamelCase
+  - key: readability-identifier-naming.ParameterCase
+    value: lower_snake_case
+  - key: readability-identifier-naming.TypedefCase
+    value: UpperCamelCase
+  - key: readability-identifier-naming.TypeAliasCase
+    value: UpperCamelCase
+  - key: readability-identifier-naming.TemplateParameterCase
+    value: UpperCamelCase
+
+  # **成员变量命名规则**
+  - key: readability-identifier-naming.MemberCase
+    value: lower_snake_case
+  - key: readability-identifier-naming.StaticMemberCase
+    value: lower_snake_case
+  - key: readability-identifier-naming.PrivateMemberSuffix
+    value: _
+  - key: readability-identifier-naming.ProtectedMemberSuffix
+    value: _
+
+  # **Setter 方法应匹配成员变量命名**
+  - key: readability-identifier-naming.SetterPrefix
+    value: Set
+  - key: readability-identifier-naming.SetterCase
+    value: UpperCamelCase
