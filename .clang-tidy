@@ -13,15 +13,15 @@ WarningsAsErrors: '*'
 CheckOptions:
   # **类命名规则**
   - key: readability-identifier-naming.ClassCase
-    value: UpperCamelCase
+    value: CamelCase
   - key: readability-identifier-naming.StructCase
-    value: UpperCamelCase
+    value: CamelCase
   - key: readability-identifier-naming.UnionCase
-    value: UpperCamelCase
+    value: CamelCase
 
   # **函数命名规则**
   - key: readability-identifier-naming.FunctionCase
-    value: UpperCamelCase
+    value: CamelCase
 
   # **变量命名规则**
   - key: readability-identifier-naming.VariableCase
@@ -29,23 +29,23 @@ CheckOptions:
   - key: readability-identifier-naming.GlobalVariableCase
     value: lower_snake_case
   - key: readability-identifier-naming.ConstantCase
-    value: UpperCamelCase   # Google 风格常量看起来像函数，例如 kMaxCount
+    value: CamelCase   # Google 风格常量看起来像函数，例如 kMaxCount
   - key: readability-identifier-naming.MacroDefinitionCase
-    value: UPPER_CASE
+    value: UPPER_SNAKE_CASE
   - key: readability-identifier-naming.NamespaceCase
     value: lower_snake_case
   - key: readability-identifier-naming.EnumCase
-    value: UpperCamelCase
+    value: CamelCase
   - key: readability-identifier-naming.EnumConstantCase
-    value: UpperCamelCase
+    value: CamelCase
   - key: readability-identifier-naming.ParameterCase
     value: lower_snake_case
   - key: readability-identifier-naming.TypedefCase
-    value: UpperCamelCase
+    value: CamelCase
   - key: readability-identifier-naming.TypeAliasCase
-    value: UpperCamelCase
+    value: CamelCase
   - key: readability-identifier-naming.TemplateParameterCase
-    value: UpperCamelCase
+    value: CamelCase
 
   # **成员变量命名规则**
   - key: readability-identifier-naming.MemberCase
@@ -53,12 +53,12 @@ CheckOptions:
   - key: readability-identifier-naming.StaticMemberCase
     value: lower_snake_case
   - key: readability-identifier-naming.PrivateMemberSuffix
-    value: _
+    value: m_
   - key: readability-identifier-naming.ProtectedMemberSuffix
-    value: _
+    value: m_
 
   # **Setter 方法应匹配成员变量命名**
   - key: readability-identifier-naming.SetterPrefix
     value: Set
   - key: readability-identifier-naming.SetterCase
-    value: UpperCamelCase
+    value: CamelCase
