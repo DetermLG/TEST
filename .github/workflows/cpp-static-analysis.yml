@@ -1,0 +1,36 @@
+name: C++ Static Analysis
+
+on: 
+    push:
+        branches:
+            - main
+            pull_request:
+                branches:
+                    - main
+                    
+jobs:
+                    static-analysis:
+                        name: Run C++ Static Analysis
+                        runs-on: ubuntu-latest
+                        
+                        steps:
+                            - name: Checkout repository
+                            uses: actions/checkout@v4
+                            
+                            - name: Install dependencies
+                            run: |
+          sudo apt update
+          sudo apt install -y clang-tidy cppcheck
+                            
+                            - name: Run clang-tidy
+                            run: |
+          mkdir -p build
+          cd build
+          cmake ..
+          make -j$(nproc) || true  # 先尝试编译，避免误报
+          find ../src -name '*.cpp' -o -name '*.h' | xargs clang-tidy -p .
+                            
+                            - name: Run cppcheck
+                            run: |
+          cppcheck --enable=all --inconclusive --quiet --std=c++17 --project=build/compile_commands.json
+                            
