@@ -25,21 +25,21 @@ CheckOptions:
 
   # **变量命名规则**
   - key: readability-identifier-naming.VariableCase
-    value: lower_snake_case
+    value: lower_case_with_underscores
   - key: readability-identifier-naming.GlobalVariableCase
-    value: lower_snake_case
+    value: lower_case_with_underscores
   - key: readability-identifier-naming.ConstantCase
     value: CamelCase   # Google 风格常量看起来像函数，例如 kMaxCount
   - key: readability-identifier-naming.MacroDefinitionCase
-    value: UPPER_SNAKE_CASE
+    value: UPPER_CASE_WITH_UNDERSCORES
   - key: readability-identifier-naming.NamespaceCase
-    value: lower_snake_case
+    value: lower_case_with_underscores
   - key: readability-identifier-naming.EnumCase
     value: CamelCase
   - key: readability-identifier-naming.EnumConstantCase
     value: CamelCase
   - key: readability-identifier-naming.ParameterCase
-    value: lower_snake_case
+    value: lower_case_with_underscores
   - key: readability-identifier-naming.TypedefCase
     value: CamelCase
   - key: readability-identifier-naming.TypeAliasCase
@@ -49,9 +49,9 @@ CheckOptions:
 
   # **成员变量命名规则**
   - key: readability-identifier-naming.MemberCase
-    value: lower_snake_case
+    value: lower_case_with_underscores
   - key: readability-identifier-naming.StaticMemberCase
-    value: lower_snake_case
+    value: lower_case_with_underscores
   - key: readability-identifier-naming.PrivateMemberSuffix
     value: m_
   - key: readability-identifier-naming.ProtectedMemberSuffix
