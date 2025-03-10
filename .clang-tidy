@@ -25,21 +25,23 @@ CheckOptions:
 
   # **变量命名规则**
   - key: readability-identifier-naming.VariableCase
-    value: lower_case_with_underscores
+    value: lower_case
   - key: readability-identifier-naming.GlobalVariableCase
-    value: lower_case_with_underscores
+    value: lower_case
   - key: readability-identifier-naming.ConstantCase
-    value: CamelCase   # Google 风格常量看起来像函数，例如 kMaxCount
+    value: CamelCase  
+  - key: readability-identifier-naming.ConstantPrefix
+    value: k
   - key: readability-identifier-naming.MacroDefinitionCase
-    value: UPPER_CASE_WITH_UNDERSCORES
+    value: UPPER_CASE
   - key: readability-identifier-naming.NamespaceCase
-    value: lower_case_with_underscores
+    value: lower_case
   - key: readability-identifier-naming.EnumCase
     value: CamelCase
   - key: readability-identifier-naming.EnumConstantCase
     value: CamelCase
   - key: readability-identifier-naming.ParameterCase
-    value: lower_case_with_underscores
+    value: lower_case
   - key: readability-identifier-naming.TypedefCase
     value: CamelCase
   - key: readability-identifier-naming.TypeAliasCase
@@ -49,12 +51,12 @@ CheckOptions:
 
   # **成员变量命名规则**
   - key: readability-identifier-naming.MemberCase
-    value: lower_case_with_underscores
+    value: lower_case
   - key: readability-identifier-naming.StaticMemberCase
-    value: lower_case_with_underscores
-  - key: readability-identifier-naming.PrivateMemberSuffix
+    value: lower_case
+  - key: readability-identifier-naming.PrivateMemberPrefix 
     value: m_
-  - key: readability-identifier-naming.ProtectedMemberSuffix
+  - key: readability-identifier-naming.ProtectedMemberPrefix
     value: m_
 
   # **Setter 方法应匹配成员变量命名**
