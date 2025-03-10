@@ -1,23 +1,23 @@
 {
-    "editor.formatOnSave": true,               // 保存时自动格式化
+    "editor.formatOnSave": true,               // Automatically format on save
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
     "clangd.arguments": [
-        "--clang-tidy",                         // 启用 Clang-Tidy 代码检查
-        "--completion-style=detailed",          // 详细代码补全
-        "--header-insertion=never",             // 不自动插入 #include
-        "--cross-file-rename",                  // 支持跨文件重命名
-        "--suggest-missing-includes",           // 提示缺失的 #include
+        "--clang-tidy",                         // Enable Clang-Tidy code checks
+        "--completion-style=detailed",          // Detailed code completion
+        "--header-insertion=never",             // Do not automatically insert #include
+        "--cross-file-rename",                  // Support cross-file renaming
+        "--suggest-missing-includes",           // Suggest missing #include
         "--compile-commands-dir=${workspaceFolder}"
     ],
 
-    "cpp-check-lint.--enable": true,   //启用插件
-    "cpp-check-lint.cppcheck.--executable": "C:\\Program Files\\Cppcheck\\cppcheck.exe",  //cppcheck路径
-    "cpp-check-lint.cppcheck.--inline-suppr": false,  //取消内联
-    "cpp-check-lint.cppcheck.--language=": "c", //使用c语言进行检查
-    "cpp-check-lint.cppcheck.--onsave": false, //在文件保存时立刻检查该文件
+    "cpp-check-lint.--enable": true,   // Enable the plugin
+    "cpp-check-lint.cppcheck.--executable": "C:\\Program Files\\Cppcheck\\cppcheck.exe",  // Path to Cppcheck
+    "cpp-check-lint.cppcheck.--inline-suppr": false,  // Disable inline suppression
+    "cpp-check-lint.cppcheck.--language=": "c", // Use C language for checking
+    "cpp-check-lint.cppcheck.--onsave": false, // Do not check the file immediately upon saving
     "cpp-check-lint.cppcheck.--quick_fix": false,
-    "cpp-check-lint.cpplint.--enable": false, //关闭无用的cpplint
-    // "cpp-check-lint.cppcheck.--addon=": [  //暂时不开启插件
+    "cpp-check-lint.cpplint.--enable": false, // Disable unnecessary cpplint
+    // "cpp-check-lint.cppcheck.--addon=": [  // Temporarily do not enable plugins
     //     "misra.py"
     // ],
 }

@@ -11,7 +11,7 @@ Checks: >
 WarningsAsErrors: '*'
 
 CheckOptions:
-  # **类命名规则**
+  # **Class naming rules**
   - key: readability-identifier-naming.ClassCase
     value: CamelCase
   - key: readability-identifier-naming.StructCase
@@ -19,11 +19,11 @@ CheckOptions:
   - key: readability-identifier-naming.UnionCase
     value: CamelCase
 
-  # **函数命名规则**
+  # **Function naming rules**
   - key: readability-identifier-naming.FunctionCase
     value: CamelCase
 
-  # **变量命名规则**
+  # **Variable naming rules**
   - key: readability-identifier-naming.VariableCase
     value: lower_case
   - key: readability-identifier-naming.GlobalVariableCase
@@ -49,7 +49,7 @@ CheckOptions:
   - key: readability-identifier-naming.TemplateParameterCase
     value: CamelCase
 
-  # **成员变量命名规则**
+  # **Member variable naming rules**
   - key: readability-identifier-naming.MemberCase
     value: lower_case
   - key: readability-identifier-naming.StaticMemberCase
@@ -59,7 +59,7 @@ CheckOptions:
   - key: readability-identifier-naming.ProtectedMemberPrefix
     value: m_
 
-  # **Setter 方法应匹配成员变量命名**
+  # **Setter methods should match member variable naming**
   - key: readability-identifier-naming.SetterPrefix
     value: Set
   - key: readability-identifier-naming.SetterCase
